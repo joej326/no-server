@@ -1,0 +1,300 @@
+body {
+  text-align: center;
+  background-image: url("http://i.imgur.com/JAxMcBl.jpg");
+  background-attachment: fixed; }
+
+img {
+  position: relative; }
+
+.party-time {
+  animation: colors 3s linear alternate infinite; }
+
+@keyframes colors {
+  14.28% {
+    background: #fe0f0f; }
+  28.57% {
+    background: #fe890f; }
+  42.85% {
+    background: #e6ff1c; }
+  57.13% {
+    background: #00d509; }
+  71.41% {
+    background: #0012ff; }
+  85.69% {
+    background: #7800ff; }
+  100% {
+    background: #9e00ff; } }
+
+.weather-div {
+  position: relative;
+  width: 25vw;
+  height: 42vw;
+  background: rgba(97, 136, 198, 0.5);
+  margin: 30px 5px 11px -3px;
+  font-size: 4vw;
+  border: 5px solid black; }
+
+.weather-div-container {
+  font-size: 3vw; }
+
+.weekDayContainer {
+  position: relative;
+  top: 3vw; }
+
+.mother-div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+#poke-party {
+  width: 90vw;
+  margin: 20px 0px 0px 0px;
+  left: 0vw; }
+
+.daysOfTheWeekContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 3vw;
+  position: relative;
+  top: 3vw; }
+
+.weather-div img {
+  right: 1vw; }
+
+.day4 {
+  display: none; }
+
+.day5 {
+  display: none; }
+
+@media (min-width: 500px) {
+  .weather-div {
+    height: 35vw; }
+  .weather-div img {
+    right: 1vw; } }
+
+@media (min-width: 575px) {
+  .weather-div {
+    height: 30vw;
+    width: 23vw; }
+  .weather-div img {
+    right: 3vw; } }
+
+@media (min-width: 670px) {
+  .daysOfTheWeekContainer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vw;
+    position: relative;
+    top: 3vw; }
+  .weather-div {
+    height: 20vw;
+    width: 15vw; }
+  .weather-div img {
+    right: 2vw;
+    width: 19vw;
+    bottom: 3vw; }
+  .mother-div {
+    display: flex;
+    flex-wrap: nowrap; }
+  .day4 {
+    display: unset; }
+  .day5 {
+    display: unset; } }
+
+@media (min-width: 1000px) {
+  #poke-party {
+    width: 40vw;
+    bottom: -3vw; }
+  .weather-div img {
+    bottom: 3vw; }
+  .weather-div {
+    margin: 30px 36px 11px 24px; }
+  .poke-title {
+    top: 10vw; } }
+
+img {
+  position: relative;
+  width: 30vw; }
+
+p {
+  font-size: 7vw; }
+
+.poke-title {
+  width: 90vw;
+  margin: 3vw 0vw 0vw 0vw;
+  animation: flip 1.5s forwards linear;
+  position: relative;
+  right: 50vw; }
+
+.home-weather-div {
+  background: rgba(65, 70, 200, 0.5);
+  margin: 0vw 30vw 0vw 30vw;
+  padding: 0vw 0vw 4vw 0vw;
+  border: 5px solid black; }
+
+@keyframes flip {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+    left: -50vw; }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+    left: 0vw; } }
+
+.taskbar:hover {
+  color: #7019d1;
+  text-decoration: none; }
+
+@media (min-width: 575px) {
+  .poke-title {
+    width: 55vw; }
+  .current-weather-description {
+    font-size: 5vw; }
+  .temp {
+    font-size: 2vw; } }
+
+@media (min-width: 575px) {
+  .home-weather-div {
+    height: 31vw;
+    margin: 0vw 40vw 0vw 40vw; }
+  .poke-pic {
+    width: 19vw;
+    bottom: 4vw; }
+  .two-stats {
+    font-size: 3vw; } }
+
+@media (min-width: 850px) {
+  .poke-pic {
+    width: 14vw; }
+  .home-weather-div {
+    height: 22vw; } }
+
+@media (min-width: 1000px) {
+  .poke-title {
+    top: 0vw; } }
+
+@media (min-width: 1250px) {
+  .current-weather-description {
+    font-size: 3vw;
+    top: 1vw;
+    position: relative; }
+  .temp {
+    font-size: 2vw; }
+  .poke-title {
+    top: -2vw; }
+  .home-weather-div {
+    height: 20vw;
+    position: relative;
+    bottom: 2vw; }
+  .current-weather {
+    position: relative;
+    bottom: 3vw; }
+  .poke-pic {
+    width: 13vw;
+    bottom: 2vw; } }
+
+body {
+  text-align: center; }
+
+.red-background {
+  width: 100%;
+  height: 100vw;
+  background: red;
+  position: absolute;
+  z-index: -40;
+  display: none; }
+
+#ash {
+  width: 95vw;
+  top: 193vw;
+  left: -1vw;
+  position: absolute; }
+
+#ash2 {
+  display: none; }
+
+#speech-bubble {
+  display: none;
+  position: absolute;
+  right: 6vw;
+  top: 64vw; }
+
+#speech-bubble2 {
+  visibility: hidden; }
+
+.pallet-button {
+  width: 30vw;
+  font-size: 25vw;
+  text-align: center;
+  position: relative;
+  left: 33vw;
+  display: none;
+  color: #3531db; }
+
+.pallet-button:hover {
+  color: #04c629; }
+
+.background-div {
+  position: absolute;
+  background-image: url("http://satoshipedia.altervista.org/wp-content/uploads/2016/04/Masara-Town.png");
+  background-size: cover;
+  min-width: 100%;
+  height: 150vh; }
+
+.background-div2 {
+  position: absolute;
+  background-image: url("https://i.ytimg.com/vi/LI1fkSSbRMk/maxresdefault.jpg");
+  display: none;
+  width: 100vw;
+  background-position-y: 0vw;
+  background-position-x: 0vw;
+  background-repeat: no-repeat;
+  height: 180vh; }
+
+.barrydos {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 7vw;
+  top: 12vw; }
+
+.barrydos-shadow {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  left: 7vw;
+  top: 12vw; }
+
+@media (min-width: 925px) {
+  .pallet-button {
+    font-size: 10vw; }
+  #speech-bubble {
+    visibility: hidden; }
+  #speech-bubble2 {
+    visibility: visible;
+    display: none;
+    position: absolute;
+    right: 16vw;
+    top: 11vw;
+    width: 23vw; }
+  #ash {
+    display: none; }
+  #ash2 {
+    width: 50vw;
+    top: 193vw;
+    left: 19vw;
+    position: absolute;
+    display: unset; } }
+
+.ash-pedestal {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(90deg, #664504, #b99f7c);
+  border-radius: 30px;
+  margin: 0px 85px 0px 121px;
+  top: 56vw;
+  right: 120px; }
+
+/*# sourceMappingURL=maps/styles.css.map */
